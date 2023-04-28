@@ -1,0 +1,282 @@
+/*css = hoja de estilo en cascada 
+hay 3 selectores principales*/
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+/*HEADER*/
+.header{
+    height: 100vh;
+}
+
+.contenedorNavegacion{
+    display:flex;
+    justify-content:space-between;
+    background-color: #353a40;
+    padding:1.2rem 5rem;
+    height: 8%;
+}
+
+.contenedorLogo{
+    width: 25%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedorLogo img{
+    width: 100px;
+    object-fit: cover;
+}
+
+.contenedorLogo h2{
+    color:white;
+     }
+
+.navegacion ul{
+  height: 100%;/*la navegacion es el padre DE TODOS LOS LINKS*/
+  list-style: none;
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 70px;
+  
+   }
+   
+   .linkdenav{
+    text-decoration: none;
+    padding-left:1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color:#9b9ea3;   
+   }  
+
+.conferenciablanco{
+    color: white;
+}
+.navegacion .listaNav .listado .verde{
+    color: green;  /*ver esto */
+}
+#verde{
+    color: greenyellow;
+}
+/*oradores esto va abajo*/
+
+.conoce h2{
+font-size: 1rem;
+text-align: center;
+font-weight: normal;
+}
+.conoce p{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.vader{ /*padre*/
+ width: 80%; 
+ display:flex; 
+ margin: 0 auto;
+}
+.vader h5{
+    display: inline-block;
+    padding-right: 0.9rem;
+    padding-left: 0.6rem;
+    text-align: center;
+    margin-left: 0.8rem;
+   
+}
+.luke{
+    padding: 0.5rem;
+    border: solid 1px;
+    border-color: #dfdfdf;
+    margin: 1rem;
+}
+.luke img{
+    width: 400px; 
+    height: 400px; 
+    object-fit:cover ; 
+    margin-bottom: 1rem;
+}
+.luke h3 {
+    padding-left: 0.8rem;
+}
+.luke a{
+    border-radius: 0.2rem;
+    padding: 0.1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.java{
+    margin-left: 0.7rem;
+    background-color:#fec009;
+    color: black;
+}
+.react{
+    background-color:#17a2b9;
+    color:black
+}
+.startup{
+background-color: #dc3546;
+color: white;
+}
+.negocios{
+    margin-left: 0.7rem;
+    background-color: #6c757e ;
+    color: white
+}
+.luke p{
+    padding-left: 0.8rem;
+ }
+/*SECTION AGUAS*/
+.contenedorConferencia{
+    background:linear-gradient(to right, #0000009c,#0000009c ),url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 88%;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding: 70px;
+}
+.hijoConferencia{
+    padding-right: 5rem;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-end; /*ACÁ ANTES HABÍA UN SPACE EVENLY Y NO ESTABA TAN MAL*/
+    
+}    
+.hijoConferencia h1{
+    color:white;
+    text-align: right;
+    font-size: 33px ;
+    padding-bottom: 10px;
+    }
+.aguasTexto{
+font-size: 1.3rem;
+line-height: 1.5;
+font-weight: 500;/* ponerlo en negrita O CAMBIAR LETRA */
+color:white;
+text-align: right;
+}
+.botonesaguas{
+    display: inline-block;
+    text-align: right;
+    font-size: 1.1rem;
+    padding-top: 30px;
+    
+ }
+.botonquieroserorador{
+    background-color: transparent;
+    color:white;
+    padding: 0.6rem ;
+    border-radius: 0.2rem;
+    border: solid 1px;
+    border-color:white;
+    margin-right: 6px;
+    
+}
+.botoncomprar{
+    background-color: #29a744;
+    padding: 0.6rem 0.83rem;
+    border-radius: 0.2rem;
+}
+
+
+/*MAIN ORADORES*/
+
+/* ASÍ ES QUE LO HICE SIN FLEXBOX 
+.oradores{
+	text-align: center;
+}
+.soytupadre{
+ margin-top:50px;
+ width: 80%;
+ height:100vh;
+ margin: 0 auto;
+ text-align: left;
+}
+.hijocard{
+	display:inline-block;
+	width:30%;
+    height:75%;
+    border:1px solid rgb(123, 123, 123);
+    border-radius: 5px;
+}
+.hijocard img{
+    width:100%;
+    height: 55%;
+    object-fit: cover;
+}
+.cardBody{
+    margin:15px;
+}
+*/
+
+/* VA SECCION PLAYA*/
+.seccionplaya{
+    height: auto;
+    display:flex;
+    background-color:#353a40;
+    color: white;
+    
+}
+.seccionplaya img{
+    height: auto;
+    width:50% 
+    
+}
+.bsasoctubeboton{
+    margin-left: 10px; 
+    
+
+}
+.conocemas{
+    background-color: transparent;
+    padding: 0.4rem 0.4rem;
+    border-radius: 0.2rem;
+    border: solid 1px;
+    border-color:white;
+    
+}
+
+/*FORM*/
+.formu{
+    background-color:#96c93e;
+}
+
+/*FOOTER*/
+.footer{
+    height: 6vh;
+    display: flex;
+    background: #1b3542;
+    background: linear-gradient(90deg,#1b3542 0%, #1d5271 80%);
+    background: -webkit-linear-gradient(90deg,#1b3542 0%, #1d5271 80%);
+    background: -moz-linear-gradient(90deg,#1b3542 0%, #1d5271 80%);
+    justify-content: space-around;
+    padding-top: 1.4rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+ a {
+	text-decoration: none;
+	color:white;
+}
+
+@media screen and (max-width: 767px)   {
+    .contenedorNavegacion{
+        background-color: rgb(154, 245, 50); /*cambiar color   background-color: rgb(69, 69, 69);*/
+        flex-direction: column;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+    }
+    .navegacion .listaNav {
+        flex-direction: column;
+    }
+
+}
